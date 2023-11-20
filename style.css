@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Pacifico&display=swap');
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-vaV7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Latin_city_01';
+    src: url('../fonts/Jesting.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.ttc') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cochin';
+    src: url('../fonts/Cochin.ttc') format('truetype');
+}
+
+:root {
+    --title-font: 'Pacifico', cursive;
+    --text-font: 'Gloock', serif;
+    --light-color: white;
+    --dark-color: black;
+    --accent-color: rgb(199, 199, 199);
+    --steel-legion-font: 'Press Start 2P', sans-serif;
+    --avenir-font: 'Avenir', sans-serif;
+    --cochin-font: 'Cochin', serif;
+}
+
+body {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100vh; 
+    margin-bottom: 10vh;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+gallery ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 2vw; 
+}
+
+.conclusion, .introduction {
+    display: flex;
+}
+
+.sticky {
+    position:fixed;
+    left: 2vw;
+    top: 0;
+    bottom: 0;
+    width: 20vw;
+    height: 100%;
+ }
+ 
+ main {
+     padding-left:30vw;
+ }
+
+ .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ body {
+    font-family: var(--text-font);
+ }
+
+ h1 {
+    font-family: var(--cochin-font);
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+ } 
+ 
+ h2, h3, h4, h5 {
+    font-family: var(--text-title);
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ nav ul li a {
+    text-decoration: inherit;
+    color: var(--accent-color);
+    font-family: var(--cochin-font);
+    size: 100%;
+ }
+
+.hoverable {
+    position: relative;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.hoverable:hover:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    border: 2px solid var(--light-color);
+    z-index: -1;
+    animation: border-fade 1s ease-in-out forwards;
+}
+
+#contact {
+    padding-left: 2vw; 
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 2vw; 
+    margin-bottom: 5vh;
+}
+
+.left img {
+    margin-top: 4vh;
+    max-width: 20vw;
+}
+
+.picture-subtitle {
+    font-size: smaller;
+}
+
+.factsheet {
+    margin-right: 5vw;
+}
+
+a {
+    color: var(--accent-color);
+    transition: all 0.3s;
+}
+
+a:hover {
+    font-weight: bold; 
+    font-size: 110%; 
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .sticky {
+        position: relative;
+        display: none;
+    }
+    main {
+        padding-left: 0;
+    }    
+}
+
+
