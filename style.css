@@ -152,6 +152,11 @@ gallery ul {
 .left img {
     margin-top: 4vh;
     max-width: 20vw;
+    filter: sepia(25%);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px var(--accent-color);
+    border: 10px double var(--accent-color);
+    padding: 10px;
 }
 
 .picture-subtitle {
