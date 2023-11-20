@@ -46,7 +46,7 @@ section {
 }
 
 .title {
-    font-size: xx-large;
+    font-size: 5vw;
 }
 
 ul {
@@ -172,10 +172,18 @@ a:hover {
     font-size: 110%; 
 }
 
-@media screen and (max-width: 768px) {
-    .main-container {
+@media screen and (max-width: 600px) {
+    * {
+        max-width: 99vw;
+    }
+    .introduction {
         display: flex;
         flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
     }
     body {
         display: flex;
@@ -185,9 +193,20 @@ a:hover {
         position: relative;
         display: none;
     }
-    main {
-        padding-left: 0;
-    }    
+    .project-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .conclusion {
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 10vw; 
+    }
+
+
+
 }
 
 
