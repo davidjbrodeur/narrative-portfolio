@@ -209,6 +209,9 @@ a:hover {
     .title {
         font-size: 10vw; 
     }
+    .left img {
+        max-width: 80vw;
+    }
 
 
 
