@@ -23,8 +23,8 @@
 :root {
     --title-font: 'Pacifico', cursive;
     --text-font: 'Gloock', serif;
-    --light-color: white;
-    --dark-color: black;
+    --light-color: rgba(255, 255, 255, 0.788);
+    --dark-color: rgb(12, 12, 12);
     --accent-color: rgb(199, 199, 199);
     --steel-legion-font: 'Press Start 2P', sans-serif;
     --avenir-font: 'Avenir', sans-serif;
